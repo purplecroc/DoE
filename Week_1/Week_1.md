@@ -13,3 +13,5 @@ screen /dev/tty.usbmodem1201
 >>> print("hello world")
 hello world
 ```
+
+Note: the usbmodem can change its number after being plugged in again.

@@ -1,10 +1,10 @@
 # DoE coding projects
 
 ## Plan
-- [Week 1](./Week_1/README.md)
+- [Week 1](./Week_1/Week_1.md)
     - Plan the project
     - Run a hello world program on the raspberry pi pico in micropython
-- Week 2
+- [Week 2](./Week_2/Week_2.md)
     - Learn how to use [GPIO](https://en.wikipedia.org/wiki/General-purpose_input/output#:~:text=A%20general%2Dpurpose%20input%2Foutput,and%20is%20controllable%20by%20software.)
     (General Purpose Input Output)
 - Week 3
