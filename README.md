@@ -7,7 +7,7 @@
 - [Week 2](./Week_2/Week_2.md)
     - Learn how to use [GPIO](https://en.wikipedia.org/wiki/General-purpose_input/output#:~:text=A%20general%2Dpurpose%20input%2Foutput,and%20is%20controllable%20by%20software.)
     (General Purpose Input Output)
-- Week 3
+- [Week 3](./Week_3/Week_3.md)
     - Source components for motion sensor project 
     - Wire a circuit 
     - Write code to detect motion over a GPIO
