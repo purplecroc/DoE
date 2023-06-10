@@ -1,7 +1,6 @@
 import network
 from time import sleep
-import machine
-import credentials
+from rpi_pico.Week_4 import credentials
 
 def connect():
     #Connect to WLAN

@@ -1,7 +1,6 @@
 from machine import Pin
 
 def run():
-    print("Hello world")
     pin_led = Pin(16, mode=Pin.OUT)
     pin_input = Pin(18, mode=Pin.IN, pull=Pin.PULL_DOWN)
 
