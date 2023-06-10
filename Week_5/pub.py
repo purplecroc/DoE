@@ -20,12 +20,14 @@ def reconnect():
     time.sleep(5)
     client.reconnect()
 
-try:
-    client = connect()
-except OSError as e:
-    reconnect()
 
-while True:
-  print('send message %s on topic %s' % (msg, topic))
-  client.publish(topic, msg, qos=0)
-  time.sleep(1)
+def run():
+    try:
+        client = connect()
+    except OSError as e:
+        reconnect()
+
+    while True:
+        print('send message %s on topic %s' % (msg, topic))
+        client.publish(topic, msg, qos=0)
+        time.sleep(1)
