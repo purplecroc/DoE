@@ -11,11 +11,10 @@
     - Source components for motion sensor project 
     - Wire a circuit 
     - Write code to detect motion over a GPIO
-- Week 4
-    - Source more components for [LED](https://en.wikipedia.org/wiki/Light-emitting_diode)
-     flasher
-     - Wire a LED circuit
-     - Write code to flash LED when motion sensed
-- Week 5
-    - Reflection on LED flasher project
-    - Plan next project
+- [Week 4](./Week_4/Week_4.md)
+    - Use a rpi pico w and connect it to WiFi using python
+- [Week 5](./Week_5/Week_5.md)
+    - Build a piblish/subscribe demonstration
+    - Turn on/off an LED from a remote PC using the pub/sub
+- [Week 6](./Week_6/Week_6.md)
+    - Use a rpi4 and camera to take pictures using python
