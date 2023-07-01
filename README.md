@@ -32,3 +32,5 @@ No code in week 1
     - Turn on/off an LED from a remote PC using the pub/sub
 - [Week 6](./Week_6/Week_6.md)
     - Use a rpi4 and camera to take pictures using python
+- [Week 7](./Week_7/Week_7.md)
+    - Install YOLO (You Only Look Once) to do object detection from the camera
