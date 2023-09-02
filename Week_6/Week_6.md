@@ -11,7 +11,7 @@ The steps i will take is
 Next week i will explore using yolo object recognition using python to detect the difference between a person and a dog so i can see if there is someone at the door.
 
 ## Install raspbian
-I used the [raspberry pi imager](https://www.raspberrypi.com/software/) to install the 64 bit rapberry pi OS onto the micro SD card. We preconfigured the following things
+I used the [raspberry pi imager](https://www.raspberrypi.com/software/) to install the 64 bit rapberry pi OS onto the micro SD card. I preconfigured the following things
 - the host name (picamera)
 - the SSH with my public key
 - username and passsword
