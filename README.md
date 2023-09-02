@@ -4,7 +4,7 @@ Please not that some files are for the rpi_pico and others for the rpi.
 
 The files for rpi_pico are in the rpi_pico directory.  This is so that they can be uploaded independent of the rpi files.
 
-To run the examples, upload this project and then import the 'run' function like this:
+To run the examples targeting the rpi pico, upload this project and then import the 'run' function like this:
 
 ```python
 >>> from rpi_pico.main import run
@@ -34,3 +34,7 @@ No code in week 1
     - Use a rpi4 and camera to take pictures using python
 - [Week 7](./Week_7/Week_7.md)
     - Install YOLO (You Only Look Once) to do object detection from the camera
+- [Final Project](./Final_project/Final_project.md)
+    - Bring together all the things I have learnt on this project
+    - If a dog is deteted, send a message over MQTT
+    - The messages are received by a rpi pico device and alerts the user that a dog is in front of the camers

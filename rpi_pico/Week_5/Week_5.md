@@ -13,3 +13,7 @@ Once connected, I could see messages arriving on the topic, so I am ready to mov
 ## Problems
 
 This was quite a difficult task to complete because I needed help getting the umqtt.simple library installed on the target device.  I had to be manually copy it onto the device.  I think I was packaging the application incorrectly, so I will come back to this at a future date to try and resolve properly.
+
+This weeks project took me much longer to achieve that the other weeks, so I was unable to achieve t he goal of having an LED turn on and off when messages were received.
+
+I will have this functionality in my final project though.
