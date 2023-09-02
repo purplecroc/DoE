@@ -1,6 +1,9 @@
 from machine import Pin
 import time
+import network
 from umqtt.simple import MQTTClient
+from rpi_pico.Week_4 import credentials
+
 
 server="test.mosquitto.org"
 ClientID = f'raspberry-sub-{time.time_ns()}'
@@ -11,14 +14,25 @@ topic="doe_project/detector"
 
 pin_led = Pin(16, mode=Pin.OUT)
 
+def connect_wifi():
+    #Connect to WLAN
+    wlan = network.WLAN(network.STA_IF)
+    wlan.active(True)
+    wlan.connect(credentials.ssid, credentials.password)
+    while wlan.isconnected() == False:
+        print('Waiting for connection...')
+        sleep(1)
+    return wlan
 
-def connect():
+
+
+def connect_mqtt():
     print('Connected to MQTT Broker "%s"' % (server))
     client = MQTTClient(ClientID, server, 1883, user, password)
     client.connect()
     return client
 
-def reconnect(client):
+def reconnect_mqtt(client):
     print('Failed to connect to MQTT broker, Reconnecting...' % (server))
     time.sleep(5)
     client.reconnect()
@@ -37,10 +51,14 @@ def process_message(topic, msg):
     
 
 def run():
+    # Connect to the wifi
+    wlan = connect_wifi()
+
+    # Connect to the MQTT server
     try:
-        client = connect()
+        client = connect_mqtt()
     except OSError as e:
-        reconnect(client)
+        reconnect_mqtt(client)
 
 
     # Set a callback for when messages are received on subscribed topics
